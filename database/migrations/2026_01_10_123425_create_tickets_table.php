@@ -17,7 +17,7 @@ return new class extends Migration
         $table->string('title');
         $table->text('description');
         $table->string('location');
-        $table->string('image_path')->nullable(); // [cite: 40]
+        $table->string('image_path')->nullable(); 
         $table->enum('status', ['pending', 'in_progress', 'resolved'])->default('pending');
         $table->timestamps();
     });

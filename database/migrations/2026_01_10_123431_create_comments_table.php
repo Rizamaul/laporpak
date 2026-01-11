@@ -13,7 +13,7 @@ return new class extends Migration
     Schema::create('comments', function (Blueprint $table) {
         $table->id();
         $table->foreignId('ticket_id')->constrained()->onDelete('cascade');
-        $table->foreignId('user_id')->constrained()->onDelete('cascade'); // [cite: 42]
+        $table->foreignId('user_id')->constrained()->onDelete('cascade'); 
         $table->text('message');
         $table->timestamps();
     });
